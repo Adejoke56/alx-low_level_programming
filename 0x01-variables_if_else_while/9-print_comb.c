@@ -2,22 +2,28 @@
 /**
  * main - prints all possible combinations of single digit numbers.
  *
- * Return: 0 (success)
+ * Description: print 0, 1, - 9
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i = '0';
+	int digit =0;
 
-	while (i <= '9')
+	while (digit <= 9)
 	{
-		putchar(i);
-		if (i != '9')
+		putchar(digit + 48);
+
+		if (digit !=9)
 		{
 			putchar(',');
-			putchar(',');
+			putchar(' ');
 		}
-		++i;
+
+		digit++;
 	}
 	putchar('\n');
+
 	return (0);
 }
+ 
